@@ -21,9 +21,13 @@ Route::get('home',function(){
     return view('home');
 });
 */
-
+/*
 //Exercise1-6
 Route::get('home',function(){
     return view('home.index');
 });
+*/
+
+//Exercise3-3
+Route::get('hello/{name?}', ['as' => 'hello.index', 'uses' => 'HelloController@index']);
 
